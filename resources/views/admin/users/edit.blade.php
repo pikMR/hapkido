@@ -22,8 +22,8 @@
                                               <!--div class="col-sm-offset-2 col-sm-10"-->
                                                 <button type="submit" class="btn btn-default">Actualiza usuario</button>
                                                 <!--div class="col-sm-offset-2 col-sm-10"-->
-                                                <a href="/laravel/public/profile/{{$user->id}}/edit" class="btn btn-default" role="button">Perfil de {{$user->first_name}}</a>
-                                                <a href="/laravel/public/admin/users" class="btn btn-default" role="button">Ver Usuarios</a>
+                                                <a href="/profile/{{$user->id}}/edit" class="btn btn-default" role="button">Perfil de {{$user->first_name}}</a>
+                                                <a href="/admin/users" class="btn btn-default" role="button">Ver Usuarios</a>
                                                 <!--/div-->
                                             </div>
                                         

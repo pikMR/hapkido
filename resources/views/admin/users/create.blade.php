@@ -14,7 +14,7 @@
                                     {!! Form::label('type','Tipo de usuario') !!}
                                     {!! Form::select('type',config('options.types'),null,['class'=>'form-control']) !!}                
                                     <button type="submit" class="btn btn-default">Crea usuario!</button>
-                                    <a href="/laravel/public/admin/users" class="btn btn-default" role="button">Ver Usuarios</a>
+                                    <a href="/admin/users" class="btn btn-default" role="button">Ver Usuarios</a>
                                     {!! Form::close() !!}
 				</div>
 			</div>
