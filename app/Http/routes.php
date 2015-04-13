@@ -78,7 +78,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'], function(){
          ['as' => 'register.add','uses' => 'AboutController@registrar']
          );
  
-Route::post('update',
+Route::post('myprofile',
          ['as' => 'perfil.update','uses' => 'AboutController@update']
          );
 
