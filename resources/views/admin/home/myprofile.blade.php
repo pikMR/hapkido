@@ -18,7 +18,7 @@ document.getElementById("taquilla").value = document.getElementById("p_taquilla"
 				<div class="panel-heading"></div>
 				<div class="panel-body">
                                      @include('admin.users.partials.messages')
-                                    {!! Form::model($profile ,['route' => ['profile.update' , $profile], 'method' => 'PUT'])  !!}
+                                    {!! Form::model($profile ,['route' => ['perfil.update' , $profile], 'method' => 'PUT'])  !!}
                                     <!-- mode('datos de comparación con formulario','ruta de envio + datos a enviar','modo de redireccionamiento.') -->
                                      @include('admin.users.partials.fields')
                                      @include('admin.home.partials.fields') 
