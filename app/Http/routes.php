@@ -23,6 +23,7 @@
 
 //De la siguiente manera usamos csrf para obtener el token de seguridad.
 //Route::when('*','csrf','POST'); // FORMA DE ACTIVARLO
+Route::pattern('id','\d+');
 
 Route::get('/', 'WelcomeController@index');
 
@@ -78,7 +79,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'], function(){
          ['as' => 'register.add','uses' => 'AboutController@registrar']
          );
  
-Route::post('myprofile',
+Route::put('myprofile/{id}',
          ['as' => 'perfil.update','uses' => 'AboutController@actualizar']
          );
 
