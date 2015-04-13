@@ -12,7 +12,8 @@ use App\Http\Requests\EditUserRequest;
 class AboutController extends Controller {
 
     public function create(){
-        return view('about.contact');
+        return view('/');
+        //return view('about.contact');
     }
     
     public function envio(){
@@ -31,8 +32,9 @@ class AboutController extends Controller {
         $message->from('gomezcortesjesus@gmail.com');
         $message->to('admin@hapkidomurcia.es', 'Admin')->subject('Correo KUMSANG');
     });
-    return \Redirect::route('/')
-      ->with('message', 'Gracias por todo!!');
+    Session::flash('Se ha enviado con exito el mensaje.',$message);
+    return redirect()->back();
+     
   }
 public function registrar(CreateUserRequest $request){
           

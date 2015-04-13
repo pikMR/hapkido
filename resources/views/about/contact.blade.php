@@ -1,9 +1,14 @@
-<?php 
-$ruta=$_SERVER["REQUEST_URI"];
-if(strpos($ruta,'contact')==FALSE){ ?>
-
+@if(Session::has('message'))
+<ul>
+    @foreach($errors->all() as $error)
+        <li></li>
+    @endforeach
+</ul>
+    <div class="alert alert-info">
+         Correo Enviado!
+    </div>
+@endif
 {!! Form::open(array('route' => 'contact_store', 'class' => 'form')) !!}
-
 <div class="form-group">
     {!! Form::label('Tu nombre') !!}
     {!! Form::text('name', null, 
@@ -33,19 +38,4 @@ if(strpos($ruta,'contact')==FALSE){ ?>
       array('class'=>'btn btn-primary')) !!}
 </div>
 {!! Form::close() !!}
-<?php }else{    ?>
-@if(Session::has('message'))
-<ul>
-    @foreach($errors->all() as $error)
-        <li></li>
-    @endforeach
-</ul>
-    <div class="alert alert-info">
-         Correo Enviado!
-    </div>
-@endif
-<?php } ?>
-
-    
-    
     
