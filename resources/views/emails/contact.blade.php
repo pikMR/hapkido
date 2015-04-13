@@ -1,4 +1,4 @@
-Hola, Has recibido un correo de la web de Hapkido Murcia
+Hola, Has recibido un correo de la web de HAPKIDOMURCIA.ES
 
 <p>
 Name: {{ $name }}

@@ -28,10 +28,10 @@ class AboutController extends Controller {
             'user_message' => $request->get('message')
         ), function($message)
     {
-        $message->from('benjahergar@gmail.com');
-        $message->to('gomezcortesjesus@gmail.com', 'Admin')->subject('Correo KUMSANG');
+        $message->from('gomezcortesjesus@gmail.com');
+        $message->to('admin@hapkidomurcia.es', 'Admin')->subject('Correo KUMSANG');
     });
-    return \Redirect::route('contact')
+    return \Redirect::route('/')
       ->with('message', 'Gracias por todo!!');
   }
 public function registrar(CreateUserRequest $request){
