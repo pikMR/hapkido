@@ -54,10 +54,10 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => env('DB_HOST', 's572298328.mialojamiento.es'),
-			'database'  => env('DB_DATABASE', 'forge'),
-			'username'  => env('DB_USERNAME', 'forge'),
-			'password'  => env('DB_PASSWORD', ''),
+			'host'      => env('DB_HOST', 'db572396573.db.1and1.com'),
+			'database'  => env('DB_DATABASE', 'db572396573'),
+			'username'  => env('DB_USERNAME', 'dbo572396573'),
+			'password'  => env('DB_PASSWORD', 'casiopea002'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
