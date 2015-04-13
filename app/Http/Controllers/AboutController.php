@@ -43,7 +43,7 @@ public function registrar(CreateUserRequest $request){
         }
         
         
-    public function update(EditUserRequest $request, $id)
+    public function actualizar(EditUserRequest $request, $id)
 	{       
                 // primero busqueda
                 $user = User::findOrFail($id);
