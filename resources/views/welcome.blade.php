@@ -21,6 +21,16 @@
         
 <div class="container-fluid text-center">
     <div class="header">
+        @if(Session::has('message'))
+<ul>
+    @foreach($errors->all() as $error)
+        <li></li>
+    @endforeach
+</ul>
+    <div class="alert alert-info">
+         Correo Enviado!
+    </div>
+@endif
         <div id="holder"><div id="scroll">
 		<MARQUEE WIDTH="100%" HEIGHT="40" ALIGN="BOTTOM">
 		{!! trim($titulo) !!}

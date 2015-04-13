@@ -32,7 +32,7 @@ class AboutController extends Controller {
         $message->from('gomezcortesjesus@gmail.com');
         $message->to('admin@hapkidomurcia.es', 'Admin')->subject('Correo KUMSANG');
     });
-    Session::flash('Se ha enviado con exito el mensaje.',$message);
+    Session::flash('message','message');
     return redirect()->back();
      
   }

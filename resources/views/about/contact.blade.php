@@ -1,13 +1,4 @@
-@if(Session::has('message'))
-<ul>
-    @foreach($errors->all() as $error)
-        <li></li>
-    @endforeach
-</ul>
-    <div class="alert alert-info">
-         Correo Enviado!
-    </div>
-@endif
+
 {!! Form::open(array('route' => 'contact_store', 'class' => 'form')) !!}
 <div class="form-group">
     {!! Form::label('Tu nombre') !!}
