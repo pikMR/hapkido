@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Middleware;
+use namespace App\Http\Middleware\isType;
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
