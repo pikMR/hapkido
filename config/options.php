@@ -13,7 +13,7 @@ return array(
        'admin/users'=>'admin',
         'admin/avanzado'=>['contributor','admin'],
         'admin/users/create'=>'admin',
-        'profile'=>'auth',
+        'profile'=>['auth','user'],
         'appeals'=>['editor','contributor'],
         'appeals/remove'=>['editor','contributor'],
         'help'=>'user',

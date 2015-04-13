@@ -6,7 +6,7 @@ namespace App\Http\Middleware;
  * and open the template in the editor.
  */
 
-Class IsAdmin extends isType{
+Class IsAdmin extends IsType{
     
     public function getType(){
         return 'admin';
