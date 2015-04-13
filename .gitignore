@@ -1,2 +1,2 @@
-.env
-laravel\config\database.php
+/.env
+laravel/config/database.php
