@@ -79,7 +79,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'], function(){
          );
  
 Route::post('update',
-         ['as' => 'perfil.update','uses' => 'AboutController@registrar']
+         ['as' => 'perfil.update','uses' => 'AboutController@update']
          );
 
 Route::group(['namespace' => 'Admin'],function(){
