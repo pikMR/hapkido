@@ -98,15 +98,21 @@
 
     </div> <!-- ahora incluimos youtube -->
             @include ('multimedia') 
-            <div class="persoimagen columns" id="media">
-       <img src="assets/images/inline/original.jpg"
-                 data-slideshow='assets/images/inline/img1.jpg|assets/images/inline/img2.jpg|assets/images/inline/img3.jpg|assets/images/inline/img4.jpg'
-                 alt="Inline pictures">
-       <p class="findus" style="margin-top: 100px;">Si quieres acceder a nuestro grupo de facebook, haz click sobre este enlace y te agregaremos sin problemas !</p>
-       <div class="fb-like" data-href="https://www.facebook.com/groups/312117028856432/" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" style="top: 30px;"></div>
-    </div>
+            <div class="col-sm-pull-0">
+                <div class="persoimagen columns" id="media" style="min-width: 300px; min-height: 300px;">
+                    <img src="assets/images/inline/original.jpg"
+                     data-slideshow='assets/images/inline/img1.jpg|assets/images/inline/img2.jpg|assets/images/inline/img3.jpg|assets/images/inline/img4.jpg'
+                     alt="Inline pictures">
+                    <div style="position: absolute;">
+                    <p class="findus" style="margin-top: 100px;">Si quieres acceder a nuestro grupo de facebook, haz click sobre este enlace y te agregaremos sin problemas !</p>
+                    <div class="fb-like" data-href="https://www.facebook.com/groups/312117028856432/" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" style="top: 30px;"></div>
+                </div>
+                </div>
+                
+            </div>
+            
     <div class="clear"></div>
-       </div>
+    </div>
        
     </div>
     
