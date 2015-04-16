@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no"/>
-    <title>Proyecto</title>
+    <title>HAPKIDOMURCIA.ES</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/jQuery-slideshow-plugin/plugin.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo3.css">
@@ -99,10 +99,12 @@
     </div> <!-- ahora incluimos youtube -->
             @include ('multimedia') 
             <div class="col-sm-pull-0">
-                <div class="persoimagen columns" id="media" style="min-width: 300px; min-height: 300px;">
-                    <img src="assets/images/inline/original.jpg"
+                <div class="persoimagen columns" id="media">
+					@include ('pasafotos') 
+				
+                    <!--img src="assets/images/inline/original.jpg"
                      data-slideshow='assets/images/inline/img1.jpg|assets/images/inline/img2.jpg|assets/images/inline/img3.jpg|assets/images/inline/img4.jpg'
-                     alt="Inline pictures">
+                     alt="Inline pictures"-->
                     <div style="position: absolute;">
                     <p class="findus" style="margin-top: 100px;">Si quieres acceder a nuestro grupo de facebook, haz click sobre este enlace y te agregaremos sin problemas !</p>
                     <div class="fb-like" data-href="https://www.facebook.com/groups/312117028856432/" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" style="top: 30px;"></div>
@@ -146,6 +148,7 @@
         </div>
 			<!--script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script-->
 			<script src="js/jquery.js"></script>
+			<script src="js/jquery.cycle2.min.js"></script>
 			<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 			<script src="assets/js/jquery.hammer-full.min.js"></script>
 			<script src="assets/jQuery-slideshow-plugin/plugin.js"> </script>

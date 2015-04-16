@@ -3,7 +3,7 @@
                       </div>
   			
   			<div class="six columns">
-  				<img src="images/general/buda.jpg">
+  				<img  style="margin-top:25px;" src="images/general/buda.jpg">
   			</div>
                       
   			<!--div class="six columns">
