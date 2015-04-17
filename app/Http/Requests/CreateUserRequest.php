@@ -27,7 +27,7 @@ class CreateUserRequest extends Request {
 		return [
                      'first_name' => 'required', 
                     'last_name' => 'required', 
-                    'email' => 'required|unique:users,email' . $this->route->getParameter('id'),
+                    'email' => 'required|unique:users,email,' . $this->route->getParameter('id'),
                     'password'=> 'required', 
                     'type' => 'required|in:' . $tipo
                     // algo a tener en cuenta type |in:foo,.. te permitira crear solo usarios del tipo incluido.

@@ -17,6 +17,7 @@
                                     Crear Usuario</a>
                                     <p> Hay {{ $users->total() }} usuarios</p>
                                     <!-- comienzo de tabla -->
+                                    
 				@include('admin.users.partials.table')
                                     <!-- comienzo del pie -->
                                     {!! str_replace('/?','?',$users->appends(Request::only(['name','type']))->render()) !!}     

@@ -43,16 +43,11 @@ class UsersController extends Controller {
 	 */
 	public function index(Request $request)
 	{
-                if(UsersController::noAdmin())return redirect()->back();
                 //$users = User::name($request->get('name'))->type($request->get('type'))->orderBy('id','DESC')->paginate();
                 $users = User::filterAndPaginate($request->get('id'),$request->get('type')); // la variable users se usa en index.blade.php
                 return view('admin.users.index',compact('users'),array('nombre' => $this->auth->user()->getFullNameAttribute()));
 	}
         
-        private function noAdmin(){
-            //   return ($this->auth->user()->type!='admin');
-            return false;
-        }
 
 	/**
 	 * PANEL DE CREACIÓN DE USUARIOS con determinado ID.
@@ -62,7 +57,6 @@ class UsersController extends Controller {
 	 */
 	public function create()
 	{
-                if(UsersController::noAdmin())return redirect()->back();
 		return view('admin.users.create');
 	}
         
@@ -111,8 +105,7 @@ class UsersController extends Controller {
 	 * @return Response
 	 */
 	public function edit($id)
-	{
-            if(UsersController::noAdmin())return redirect()->back();    
+	{   
             $user = User::findOrFail($id);
             return view('admin.users.edit',compact('user')); // esta variable es usada en edit.blade.php
 	}
@@ -133,7 +126,6 @@ class UsersController extends Controller {
 	public function update(EditUserRequest $request, $id)
 	{          
                 //dd($request,$id);
-                if(UsersController::noAdmin())return redirect()->back();
 		$user = User::findOrFail($id);	//
                 $user->fill($request->all());
                 $user->save();
@@ -152,7 +144,6 @@ class UsersController extends Controller {
 	public function destroy($id, Request $request)
 	{
                // dd('3');
-                if(UsersController::noAdmin())return redirect()->back();
                 $user = User::findOrFail($id);
                 $user->delete();
                 

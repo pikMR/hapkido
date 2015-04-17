@@ -25,6 +25,7 @@
                                       {!! Form::hidden('first_name',$user->first_name)!!}
                                       {!! Form::hidden('last_name',$user->last_name)!!}
                                       {!! Form::hidden('email',$user->email)!!}
+                                      {!! Form::hidden('id',$user->id)!!}
                                       
                                             <td>    @if ($user->active)      
                                                <div class="checkbox-1">
