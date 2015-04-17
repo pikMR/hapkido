@@ -125,7 +125,6 @@ class UsersController extends Controller {
 	 */
 	public function update(EditUserRequest $request, $id)
 	{          
-                //dd($request,$id);
 		$user = User::findOrFail($id);	//
                 $user->fill($request->all());
                 $user->save();

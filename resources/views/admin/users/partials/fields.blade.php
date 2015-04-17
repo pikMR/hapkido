@@ -14,4 +14,5 @@
                                              {!! Form::label('last_name','Apellido') !!}
                                              {!! Form::text('last_name',null,['class' => 'form-control','placeholder' => 'Introduzca el apellido']) !!}
                                             </div>
+                                            {!! Form::hidden('id',$user->id)!!}
                                              

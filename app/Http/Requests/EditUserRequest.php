@@ -31,11 +31,16 @@ class EditUserRequest extends Request {
 	 */
 	public function rules(){
                $tipo =  substr(implode(',',array_keys(config('options.types'))) , 1);
+                    if($this->route->getParameter('id')!=null)
+                        $id = $this->route->getParameter('id');
+                    if($this->route->getParameter('users')!=null)
+                        $id = $this->route->getParameter('users');
+
                // implode para pasar a un string separado por ',' el contenido del array, utilizo substr para descartar el primer caracter ',', array_keys para seleccionar las keys.
 		return [
                     'first_name' => 'required', 
                     'last_name' => 'required', 
-                    'email' => 'required|unique:users,email,' . $this->route->getParameter('id'), 
+                    'email' => 'required|unique:users,email,' . $id, 
                     // puesto que usamos el controlador en ambos casos, tendremos que dar opción a uno o otro caso php artisan route:list para ver el parametro..
                     // con get parameter recogemos el id del usuario para excluirlo
                     'type' => 'required|in:' . $tipo
