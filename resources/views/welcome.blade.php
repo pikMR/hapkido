@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+   <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no"/>
     <title>HAPKIDOMURCIA.ES</title>
@@ -8,17 +9,39 @@
     <link rel="stylesheet" type="text/css" href="assets/jQuery-slideshow-plugin/plugin.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo3.css">
 	<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=206074422791238&version=v2.0";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
+	<style>
+			.contenido {
+				 position:absolute;
+				 z-index:600;
+				 background-color:#FFFFFF;
+				 width:100%;
+				 top:0px;
+				 left:0px;
+				 
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				display: inline-block;
+			}
+			.titulo {
+				font-weight: 20;
+				font-family: 'Lato';
+				font-size: 40px;
+				margin-bottom: 40px;
+			}
+			.quote {
+				text-align:right;
+				font-family: 'Arial';
+				font-size: 24px;
+			}
+		</style>
 </head>
 
 <body>
-        
+			<div class="contenido">
+				<div class="titulo">{{ $titulo }}<div class="quote">hapkidomurcia.es</div></div>
+				
+			</div>
 <div class="container-fluid text-center">
     <div class="header">
         @if(Session::has('message'))
@@ -30,10 +53,8 @@
     <div class="alert alert-info">
          Correo Enviado!
     </div>
-@endif
-        <div id="holder"><div id="scroll">
-		{!! trim($titulo) !!}	</div></div>
-     
+@endif     
+		
         <div class="col-lg-12">
         <img class="headerImg col-sm-push-12"
              src="images/resized/1.JPG"
