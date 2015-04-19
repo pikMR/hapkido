@@ -17,7 +17,7 @@
 				</div-->
         <div class="four columns">
             <div class="instalacion_group">
-              <h2 class="Appetizers">Appetizers</h2>
+              <!--h2 class="Appetizers">Appetizers</h2-->
               
                 <div class="instalacion_item">
                   
@@ -56,7 +56,7 @@
             <div class="four columns">
             
                <div class="instalacion_group">
-              <h2 class="Appetizers">Appetizers</h2>
+              <!--h2 class="Appetizers">Appetizers</h2-->
               
                 <div class="instalacion_item">
                   

@@ -8,7 +8,20 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/jQuery-slideshow-plugin/plugin.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo3.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/windy.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/style1.css" />
+	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript>
 	<div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=206074422791238&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 	<style>
 			.contenido {
 				 position:absolute;
@@ -123,11 +136,12 @@
                     <!--img src="assets/images/inline/original.jpg"
                      data-slideshow='assets/images/inline/img1.jpg|assets/images/inline/img2.jpg|assets/images/inline/img3.jpg|assets/images/inline/img4.jpg'
                      alt="Inline pictures"-->
-                    <div style="position: absolute;">
-                    <p class="findus" style="margin-top: 100px;">Si quieres acceder a nuestro grupo de facebook, haz click sobre este enlace y te agregaremos sin problemas !</p>
-                    <div class="fb-like" data-href="https://www.facebook.com/groups/312117028856432/" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" style="top: 30px;"></div>
-                </div>
-                </div>
+					 <p class="findus" style="margin-top: 100px;">Si quieres acceder a nuestro grupo de facebook, haz click sobre este enlace y te agregaremos sin problemas !</p>
+                    <div class="fb-like" data-href="https://www.facebook.com/groups/312117028856432/" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+				</div>
+	
+                    
                 
             </div>
             
@@ -166,7 +180,7 @@
         </div>
 			<!--script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script-->
 			<script src="js/jquery.js"></script>
-			<script src="js/jquery.cycle2.min.js"></script>
+			<!--script src="js/jquery.cycle2.min.js"></script-->
 			<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 			<script src="assets/js/jquery.hammer-full.min.js"></script>
 			<script src="assets/jQuery-slideshow-plugin/plugin.js"> </script>
@@ -175,6 +189,58 @@
 			<script src="js/easing.js"></script>
 			<script src="js/cabecera.js"></script>
 			<script src="js/smooth.js"></script>
+			<!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script-->
+        <script type="text/javascript" src="js/jquery.windy.js"></script>
+			<script type="text/javascript">	
+				$(function() {
+
+					var $el = $( '#wi-el' ),
+						windy = $el.windy(),
+						allownavnext = false,
+						allownavprev = false;
+
+					$( '#nav-prev' ).on( 'mousedown', function( event ) {
+
+						allownavprev = true;
+						navprev();
+					
+					} ).on( 'mouseup mouseleave', function( event ) {
+
+						allownavprev = false;
+					
+					} );
+
+					$( '#nav-next' ).on( 'mousedown', function( event ) {
+
+						allownavnext = true;
+						navnext();
+					
+					} ).on( 'mouseup mouseleave', function( event ) {
+
+						allownavnext = false;
+					
+					} );
+
+					function navnext() {
+						if( allownavnext ) {
+							windy.next();
+							setTimeout( function() {	
+								navnext();
+							}, 150 );
+						}
+					}
+					
+					function navprev() {
+						if( allownavprev ) {
+							windy.prev();
+							setTimeout( function() {	
+								navprev();
+							}, 150 );
+						}
+					}
+
+				});
+			</script>	
 			<script>
 				$(document).ready(function () {
 					$('img').slideShow();
