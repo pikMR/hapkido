@@ -32,10 +32,7 @@
     </div>
 @endif
         <div id="holder"><div id="scroll">
-		<MARQUEE WIDTH="100%" HEIGHT="40" ALIGN="BOTTOM">
-		{!! trim($titulo) !!}
-		</MARQUEE>
-		</div></div>
+		{!! trim($titulo) !!}	</div></div>
      
         <div class="col-lg-12">
         <img class="headerImg col-sm-push-12"
