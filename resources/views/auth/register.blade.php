@@ -8,7 +8,7 @@
                             @if (Session::has('store_message'))
                                     <p class="alert alert-success">{{ Session::get('store_message') }}</p>
                             @endif
-				<div class="panel-heading">Register</div>
+				<div class="panel-heading">Registrar</div>
                                 <div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
@@ -33,7 +33,7 @@
                                                                 @else
                                                                 <button type="submit" class="btn btn-primary">
                                                                 @endif
-									Register
+									Registrar
 								</button>
                                                                 
 							</div>

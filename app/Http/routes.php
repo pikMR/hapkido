@@ -52,6 +52,7 @@ Route::post('contact',
  entonces podremos acceder de la forma Nombre , o Nombre/id (siendo id un numero por ejemplo) */
 Route::controllers([
         //'users' => 'HomeController', #aceso a getORM con /users/orm
+        /* Se utiliza auth.register a traves de use AuthenticatesAndRegistersUsers; con el metodo getRegister */
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
@@ -75,6 +76,8 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'], function(){
   Route::post('contact',
         ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 
+  
+  
  Route::post('register',
          ['as' => 'register.add','uses' => 'AboutController@registrar']
          );

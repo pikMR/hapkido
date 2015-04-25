@@ -37,7 +37,10 @@ class AboutController extends Controller {
      
   }
 public function registrar(CreateUserRequest $request){
-          
+          /*
+           * Utilizo este metodo aunque para no liar tanto el codigo debería de haber utilizado 
+           * AuthenticatesAndRegistersUsers para realizar tanto el getRegister como el postRegister.
+           */
             $user = User::create($request->all());
             UserProfile::create(['user_id'=>$user->id]);
             Session::put('store_message', "- Activación de la cuenta en proceso -");

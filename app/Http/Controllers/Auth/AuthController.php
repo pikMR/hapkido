@@ -59,8 +59,6 @@ class AuthController extends Controller {
    } 
         
         
-        
-        
         protected function getFailedLoginMessage()
 	{
 		return trans('passwords.invalid_credentials');
