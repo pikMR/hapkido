@@ -65,10 +65,8 @@ class WelcomeController extends Controller {
         }
         
          public static function functextoasocr(){
-            return "
-            Los ideagramas que representan “hapkido” son los mismos que los del arte marcial tradicional japonés “aikido”, 
-            diferenciándose sólo en su pronunciación. Cada uno de ellos es una pieza clave en las artes marciales y fundamentales para la vida.</p>
-            <p> Unión (HAP),energía (KI) y camino (DO).</p>";
+            return "Los ideagramas que representan “hapkido” son los mismos que los del arte marcial tradicional japonés “aikido”, 
+            diferenciándose sólo en su pronunciación. Cada uno de ellos es una pieza clave en las artes marciales y fundamentales para la vida.";
         }
 
 

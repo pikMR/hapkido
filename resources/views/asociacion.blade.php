@@ -5,7 +5,8 @@
 <img src="images/general/hapkido_small_font.png">
 </div>
 <div class="eight columns split2">
-    <p>{!! $asocizq !!} {!! $asocder !!}</p>   
+  <span style="font-size:20px;">{{ $asocizq }} {{ $asocder }}</span>
+            <p> Unión (HAP),energía (KI) y camino (DO).</p>
 </div>
         
 </div>
