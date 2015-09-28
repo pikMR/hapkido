@@ -122,7 +122,7 @@
             </div>
         </div>
       
-        <div class="container" style="margin-top: 0px;"> 
+        <div class="container_multimedia" style="margin-top: 0px;"> 
            <div class="twelve columns" style="right: 0px;top:330px;">
        <a class="twitter-timeline"  href="https://twitter.com/HAPKIDO_MURCIA" data-widget-id="574874501479075841">Tweets de @HAPKIDO_MURCIA.</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -131,14 +131,10 @@
             @include ('multimedia') 
             <div class="col-sm-pull-0">
                 <div class="persoimagen columns" id="media">
+                    <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/aheac/posts/1135926866435295" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/aheac/posts/1135926866435295"><p>Sigenos en nuestro grupo de FACEBOOK : https://www.facebook.com/groups/312117028856432/</p>Posted by <a href="https://www.facebook.com/aheac">Hapkidomurcia.es</a> on&nbsp;<a href="https://www.facebook.com/aheac/posts/1135926866435295">Lunes, 28 de septiembre de 2015</a></blockquote></div></div>
+					 <p class="findus">Si quieres acceder a nuestro grupo de facebook, haz click sobre este enlace y te agregaremos sin problemas !</p>
+                    <div class="fb-like" data-href="https://www.facebook.com/groups/312117028856432/" data-width="150" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 					@include ('pasafotos') 
-				
-                    <!--img src="assets/images/inline/original.jpg"
-                     data-slideshow='assets/images/inline/img1.jpg|assets/images/inline/img2.jpg|assets/images/inline/img3.jpg|assets/images/inline/img4.jpg'
-                     alt="Inline pictures"-->
-					 <p class="findus" style="margin-top: 100px;">Si quieres acceder a nuestro grupo de facebook, haz click sobre este enlace y te agregaremos sin problemas !</p>
-                    <div class="fb-like" data-href="https://www.facebook.com/groups/312117028856432/" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-
 				</div>
 	
                     
