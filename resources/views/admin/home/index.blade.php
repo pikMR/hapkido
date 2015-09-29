@@ -17,7 +17,7 @@
                                     <div class="row col-md-offset-3">
                                        @include('admin.home.partials.potro')
                                 @endif    
-                                    @if  ( !($usuario->is('editor') || $usuario->is('contributor')) ) 
+                                    @if  ( !($usuario->is('editor') || $usuario->is('contributor') || $usuario->is('subscriber')) ) 
                                         @if(!$usuario->isAdmin())
                                         <div class="col-md-8">
                                             <a href="help" class="thumbnail">

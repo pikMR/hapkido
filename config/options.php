@@ -13,9 +13,9 @@ return array(
        'admin/users'=>'admin',
         'admin/avanzado'=>['contributor','admin'],
         'admin/users/create'=>'admin',
-        'profile'=>['auth','user','admin','contributor','editor'],
-        'appeals'=>['editor','contributor'],
-        'appeals/remove'=>['editor','contributor'],
+        'profile'=>['auth','user','admin','contributor','editor','subscriber'],
+        'appeals'=>['editor','contributor','subscriber'],
+        'appeals/remove'=>['editor','contributor','subscriber'],
         'help'=>'user',
     ]
 );
