@@ -3,9 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/laravel/laravel/resources/views/welcome.blade.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/resources/views/pasafotos.blade.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/resources/views/multimedia.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/laravel/_ide_helper.php</file>
+            <file>file:/C:/wamp/www/laravel/laravel/resources/assets/less/bootstrap/panels.less</file>
+            <file>file:/C:/wamp/www/laravel/laravel/resources/assets/less/bootstrap/forms.less</file>
+            <file>file:/C:/wamp/www/laravel/laravel/resources/assets/less/bootstrap/dropdowns.less</file>
+            <file>file:/C:/wamp/www/laravel/laravel/resources/views/admin/home/appeals.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/laravel/resources/views/auth/reset.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/laravel/resources/views/errors/503.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/laravel/resources/views/app.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/laravel/resources/views/test.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/laravel/resources/views/admin/users/avanzado.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/laravel/resources/assets/less/bootstrap/carousel.less</file>
         </group>
     </open-files>
 </project-private>

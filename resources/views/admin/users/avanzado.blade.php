@@ -7,14 +7,14 @@
                             
 				<div class="panel-heading">
                                     <h4 style="text-align: center">Sigue el camino</h4>
-                                 <object data="../data/2909201500.pdf" type="application/pdf" width="100%" height="900px">
+                                 <object data="{{asset('data/2909201500.pdf')}}" type="application/pdf" width="100%" height="900px">
  
   <p> Tienes problemas para visualizar el archivo, pincha en el siguiente enlace para descargar :  <a href="2909201500.pdf">DESCARGA!
 </a></p>
   
 </object>
                                     
-                                    <object data="../data/2909201501.pdf" type="application/pdf" width="100%" height="900px">
+                                    <object data="{{asset('data/2909201501.pdf')}}" type="application/pdf" width="100%" height="900px">
  
   <p> Tienes problemas para visualizar el archivo, pincha en el siguiente enlace para descargar :  <a href="2909201500.pdf">DESCARGA!
 </a></p>
