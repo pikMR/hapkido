@@ -30,7 +30,10 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-            $lema = "<p>HONRADEZ</p><p>RESPONSABILIDAD</p><p>SINCERIDAD</p>";
+            $lema = "<p><a title='Ser honrado con todas las personas, y creer en la propia justicia (saber distinguir lo correcto de lo incorrecto).'>"
+                    . "HONRADEZ</a></p><p>"
+                    . "<a title='Se es dueño, y responsable de todo lo que se dice y hace.'>RESPONSABILIDAD</a></p>"
+                    . "<p><a title='Lo que se dice, se hace. No hay diferencia entre hablar y hacer para un samurái.'>SINCERIDAD</a></p>";
             $txtizquierda = WelcomeController::functextoasocl();
             $txtderecha = WelcomeController::functextoasocr();
             $titulo = WelcomeController::quote();

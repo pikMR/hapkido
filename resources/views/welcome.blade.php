@@ -1,10 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-   <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <meta name="hapkido en murcia" content="Somos practicantes de hapkido en la ciudad de murcia y esta es nuestra web">
+    <meta name="robots" content="Index, Follow">
+    <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no"/>
-    <title>HAPKIDOMURCIA.ES</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1 user-scalable=no"/>
+    <title>HAPKIDOMURCIA.ES | Practica Hapkido en MURCIA, tu mejor DOJANG</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/jQuery-slideshow-plugin/plugin.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo3.css">
@@ -52,7 +54,7 @@
 
 <body>
 			<div class="contenido">
-				<div class="titulo">{{ $titulo }}<div class="quote">hapkidomurcia.es</div></div>
+                            <div class="titulo">{{ $titulo }}<div class="quote"><a>hapkidomurcia.es</a></div></div>
 				
 			</div>
 <div class="container-fluid text-center">
@@ -73,7 +75,7 @@
              src="images/resized/1.JPG"
              data-slideshow='images/resized/4.JPG|images/resized/2.JPG|images/resized/3.JPG'>
         </div>
- 
+
     </div>
 </div>
 <div id="menu">
@@ -100,7 +102,7 @@
     <div id="instalacion" style="section fadeIn">
         
         <div class="container" style="margin-top:0px;">
-            <h4 style="margin-left: 100px;">I shin den shin: De Mi Espíritu a tú Espíritu</h4>
+            <h4 style="margin-left: 100px;"><a href="http://masalladelmasalla.blogspot.com.es/2008/06/i-shin-den-shin.html">I shin den shin</a>: De Mi Espíritu a tú Espíritu</h4>
     @include ('instalaciones')
     </div>
     </div>
@@ -150,7 +152,7 @@
 		<div style="margin-top: 100px;" class="container">
 			<div class="three columns title">
 				<img class="stamp_find" src="images/general/dragon.png">
-				<p class="subhead">CALLE DON QUIJOTE, SANBASILIO<br>MURCIA, 30009<br>619 805 027 </p>
+                                <p class="subhead">CALLE DON QUIJOTE, SANBASILIO<br><a><font color="FFF0CC">MURCIA</font></a>, 30009<br>619 805 027 </p>
 				<p class="diamond">♦</p>
 				
 					<p><span>Martes - Jueves</span><br>19:00 - 21:00</p>
