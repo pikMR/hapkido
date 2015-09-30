@@ -53,8 +53,9 @@ class WelcomeController extends Controller {
                         'El mejor uso que se puede hacer de una espada es no emplearla.A menos que no haya otra salida.',
                         'El secreto del combate reside en el arte de dirigirlo. - GichinFunakoshi',
                         'El Hapkido Es el camino para reconciliarse con el mundo y hacer que la humanidad se transforme un una única familia',
-                        'El hombre que busca venganza debe cabar 2 tumbas',
-                        'Aún si tu espíritu está calmado, no dejes que tu cuerpo se relaje.Y cuando tu cuerpo esté relajado, no dejes que tu espíritu holgazanee.'
+                        'El hombre bueno es maestro del homnre no bueno,y el hombre no bueno es su bien material,porque el buen maestro no tiene interés,porque a su material no le tiene apego.',
+                        'Aún si tu espíritu está calmado, no dejes que tu cuerpo se relaje.Y cuando tu cuerpo esté relajado, no dejes que tu espíritu holgazanee.',
+                        'Aprende la enseñanza del silencio, y tendrás la ventaja del no hacer.Muy pocos bajo el cielo comprenden su importanciá. - El uso de lo Universal.'
 
 		])->random();
 	}
