@@ -55,8 +55,17 @@
 
 <body>
 			<span itemscope itemtype="http://schema.org/Event"><div class="contenido">
-                            <div class="titulo">{{ $titulo }}<div class="quote"><a itemprop="url">hapkidomurcia.es</a></div></div>
-				
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="USD" />    
+                                    <div class="titulo">{{ $titulo }}
+                                        <div class="quote">
+                                            <a>
+                                            <span itemprop="url">hapkidomurcia.es</span>
+                                            <span itemprop="price"></span>      
+                                            </a>
+                                        </div>
+                                    </div>
+				</span>
 			</div>
 <div class="container-fluid text-center">
     <div class="header">
@@ -150,6 +159,7 @@
        
     </div>
         <meta itemprop="startDate" content="2013-09-28">
+        
         <div id="findus" class="section fadeIn">
 		<div style="margin-top: 100px;" class="container">
 			<div itemprop="location" itemscope itemtype="http://schema.org/Place" class="three columns title">
@@ -168,7 +178,9 @@
 				<p>
                                     Envia alguna sugerencía o pregunta
 				</p>
+                                
 			</div>
+                        <p itemprop="name" class="subhead">A.H.E.A.C</p>
 			<div class="nine columns">
 				<div class="hide_terms">
 					<div class="gone">
