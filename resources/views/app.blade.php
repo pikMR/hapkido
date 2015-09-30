@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>AHEAC</title>
+	<title>HAPKIDOMURCIA.ES | Acceso privado a socios</title>
         
 	<!--link href="//localhost/laravel/public/css/app.css" rel="stylesheet" type="text/css"-->
         <link href="../css/app.css" rel="stylesheet" type="text/css">
@@ -23,12 +23,12 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+					<span class="sr-only">VEN A PRACTICAR!</span>
+					<span class="icon-bar">HAP</span>
+					<span class="icon-bar">KI</span>
+					<span class="icon-bar">DO</span>
 				</button>
-				<a class="navbar-brand" href="/">합기도</a>
+				<a class="navbar-brand" href="/">합기도 | HAPKIDO</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
