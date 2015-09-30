@@ -3,34 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/laravel/laravel/resources/views/admin/home/appeals.blade.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Requests/BookForm.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/config/options.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Middleware/IsContributor.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Middleware/IsType.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/resources/views/admin/users/avanzado.blade.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Middleware/Authenticate.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Requests/Request.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/routes.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Requests/EditProfileRequest.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/resources/views/asociacion.blade.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Middleware/IsEditor.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Middleware/RedirectIfAuthenticated.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/resources/views/admin/home/myprofile.blade.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Requests/EditUserRequest.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Controllers/Admin/ProfileController.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Controllers/WelcomeController.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Middleware/VerifyCsrfToken.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/resources/views/admin/home/help.blade.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/composer.lock</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Middleware/IsUser.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/resources/views/admin/users/index.blade.php</file>
             <file>file:/C:/wamp/www/laravel/laravel/resources/views/welcome.blade.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/resources/views/admin/home/index.blade.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Controllers/HomeController.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Middleware/IsAdmin.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Controllers/Admin/UsersController.php</file>
-            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Requests/RegisterUserRequest.php</file>
+            <file>file:/C:/wamp/www/laravel/laravel/app/Http/Controllers/WelcomeController.php</file>
+            <file>file:/C:/wamp/www/laravel/laravel/resources/views/app.blade.php</file>
         </group>
     </open-files>
 </project-private>
