@@ -164,7 +164,7 @@
 					<p><span>Sabados</span><br>10:00 - 13:00</p>
 				 
 				
-				<p class="subhead">CONTACTA CON NOSOTROS!</p>
+				<p itemprop="name" class="subhead">CONTACTA CON NOSOTROS!</p>
 				<p>
                                     Envia alguna sugerencía o pregunta
 				</p>
