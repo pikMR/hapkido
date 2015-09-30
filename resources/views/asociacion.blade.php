@@ -1,7 +1,7 @@
       <div class="wrap">
 	<div class="four columns title">
 <img class="stamp" src="images/general/miniaguila.png">
-<p class="subhead">Bienvenido a nuestra escuela de hapkido, somos un grupo de practicantes de este bonito arte marcial, nuestros objetivos de enseñanza son: {!! $lema !!}</p>
+<p class="subhead">Bienvenido a nuestra <span itemprop="name">escuela de hapkido</span>,<span itemprop="description"> somos un grupo de practicantes de este bonito arte marcial</span>, nuestros objetivos de enseñanza son: {!! $lema !!}</p>
 <img src="images/general/hapkido_small_font.png">
 </div>
 <div class="eight columns split2">

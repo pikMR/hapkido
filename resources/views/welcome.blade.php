@@ -6,6 +6,7 @@
     <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1 user-scalable=no"/>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>HAPKIDOMURCIA.ES | Practica Hapkido en MURCIA, tu mejor DOJANG</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/jQuery-slideshow-plugin/plugin.css">
@@ -53,8 +54,8 @@
 </head>
 
 <body>
-			<div class="contenido">
-                            <div class="titulo">{{ $titulo }}<div class="quote"><a>hapkidomurcia.es</a></div></div>
+			<span itemscope itemtype="http://schema.org/Event"><div class="contenido">
+                            <div class="titulo">{{ $titulo }}<div class="quote"><a itemprop="url">hapkidomurcia.es</a></div></div>
 				
 			</div>
 <div class="container-fluid text-center">
@@ -77,6 +78,7 @@
         </div>
 
     </div>
+    <meta itemprop="image" content="http://www.hapkidomurcia.es/images/resized/4.JPG">
 </div>
 <div id="menu">
     <a href="#about" class="smooth">La Asociación</a>  
@@ -147,12 +149,12 @@
     </div>
        
     </div>
-    
+        <meta itemprop="startDate" content="2013-09-28">
         <div id="findus" class="section fadeIn">
 		<div style="margin-top: 100px;" class="container">
-			<div class="three columns title">
+			<div itemprop="location" itemscope itemtype="http://schema.org/Place" class="three columns title">
 				<img class="stamp_find" src="images/general/dragon.png">
-                                <p class="subhead">CALLE DON QUIJOTE, SANBASILIO<br><a><font color="FFF0CC">MURCIA</font></a>, 30009<br>619 805 027 </p>
+                                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="subhead"><span itemprop="streetAddress">CALLE DON QUIJOTE</span>, <span itemprop="addressLocality">SANBASILIO</span><br><a><font color="FFF0CC" itemprop="addressRegion">MURCIA</font></a>, <span itemprop="postalCode">30009</span><br>619 805 027 </p>
 				<p class="diamond">♦</p>
 				
 					<p><span>Martes - Jueves</span><br>19:00 - 21:00</p>
@@ -175,7 +177,7 @@
 				</div>
 			</div>
 		</div>
-        </div>
+        </div></span>
 			<!--script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script-->
 			<script src="js/jquery.js"></script>
 			<!--script src="js/jquery.cycle2.min.js"></script-->
