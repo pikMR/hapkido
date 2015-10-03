@@ -16,4 +16,4 @@
 						<span id="nav-next">next</span>
 					</nav>
 				</div>
-				</section>
+</section>
