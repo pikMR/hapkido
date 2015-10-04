@@ -41,6 +41,9 @@
        <iframe width="800px" height="400px" src="https://www.youtube.com/embed/videoseries?list=PLsFAzrqjgQudU1zjaBzs1sb-D3eF-I9qH" frameborder="0" allowfullscreen></iframe> 
         
     </div>	
+    <div class="twelve columns">
+                @include ('pasafotos')
+    </div>
 </div>
 		
            
