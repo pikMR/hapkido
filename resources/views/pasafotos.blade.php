@@ -1,4 +1,3 @@
-﻿<section class="main">
 <div class="windy-demo">
 					<ul id="wi-el" class="wi-container">
 						<!--li><img src="images/resized/s_1.jpg" alt="image1"/><h4>Práctica</h4><p>El camino es largo, y la práctica es fundamental.</p></li-->
@@ -15,5 +14,4 @@
 						<span id="nav-prev">prev</span>
 						<span id="nav-next">next</span>
 					</nav>
-				</div>
-</section>
+</div>

@@ -1,5 +1,8 @@
+
 <div id="findus" class="section fadeIn">
+      
     <div style="margin-top: 100px;" class="container">
+        
         <div itemprop="location" itemscope itemtype="http://schema.org/Place" class="three columns title">
             <img class="stamp_find" src="images/general/dragon.png">
             <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="subhead">
@@ -49,8 +52,9 @@
                     </div>
                     {!! Form::close() !!}
 
-                </div>
+                </div> 
             </div>
         </div>
     </div>
+ 
 </div>

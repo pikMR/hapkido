@@ -109,6 +109,9 @@
             @include ('multimedia') 
             <meta itemprop="startDate" content="2013-09-28">
             <!-- Formulario de contacto -->
+                <div class="ten two columns">
+                @include ('pasafotos')
+                 </div>
             @include('about.contact')
 
         </span>
