@@ -85,6 +85,9 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'], function(){
 Route::put('myprofile/{id}',
          ['as' => 'perfil.update','uses' => 'AboutController@actualizar']
          );
+Route::post('myprofile/{id}',
+         ['as' => 'perfil.update','uses' => 'AboutController@actualizar']
+         );
 
 Route::group(['namespace' => 'Admin'],function(){
     

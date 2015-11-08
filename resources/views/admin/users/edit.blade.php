@@ -10,7 +10,7 @@
 
 				<div class="panel-body">
                                      @include('admin.users.partials.messages')
-                                    {!! Form::model($user , ['route' => ['admin.users.update' , $user], 'method' => 'POST'])  !!}
+                                    {!! Form::model($user , ['route' => ['admin.users.update' , $user], 'method' => 'PUT'])  !!}
                                      @include('admin.users.partials.fields')
                                      {!! Form::hidden('id',$user->id)!!}
                                      <!-- Aquí vendra la sección de elegir usuario para le administrador. -->

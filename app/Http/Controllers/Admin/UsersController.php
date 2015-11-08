@@ -12,6 +12,7 @@ use Illuminate\Contracts\Auth\Guard;
 use App\User;
 use App\UserProfile;
 
+
 class UsersController extends Controller {
     /*
      * $credentials = $request->only('email', 'password' , 'active');
@@ -64,7 +65,7 @@ class UsersController extends Controller {
 	/**
 	 * FUNCIÓN PARA LA CREACIÓN DE USUARIOS.
          * Esta función es utilizada por create(vista:admin.users.create) y por 
-         * auth/register (vista:admin.auth.register)
+         * auth/register (vista:admin.auth.register) También para editarlo.
          * TENDRAN ACCESO TANTO ADMIN, COMO GUEST.
 	 * @return BACK
 	 */
@@ -130,6 +131,7 @@ class UsersController extends Controller {
                 $user->save();
                 return redirect()->back();
 	}
+   
 
 	/**
 	 * Remove the specified resource from storage.
@@ -160,7 +162,7 @@ class UsersController extends Controller {
 	}
 
 }
-/*public function store(Request $request,Redirector $redirect) // uso de Request estatico. (EstatReq)
+      /*  public function store(Request $request,Redirector $redirect) // uso de Request estatico. (EstatReq)
 	{
             $data = EstatReq::all();
             $rules = array(
@@ -192,4 +194,5 @@ class UsersController extends Controller {
             //$user->type = 'user'; de esta forma forzamos a que todo usuario sea de tipo usuario
             $user->save(); // guardamos en db
             return $redirect->route('admin.users.index'); // redireccionamos.
-	}*/
+	}
+*/
