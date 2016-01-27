@@ -25,19 +25,20 @@
                                       {!! Form::hidden('first_name',$user->first_name)!!}
                                       {!! Form::hidden('last_name',$user->last_name)!!}
                                       {!! Form::hidden('email',$user->email)!!}
-                                      {!! Form::hidden('id',$user->id)!!}
                                       
                                             <td>    @if ($user->active)      
                                                <div class="checkbox-1">
                                                    <input type="checkbox" id="ch{{$user->id}}" value="0" name="active" checked/>
                                                 <label for="ch{{$user->id}}"></label>
                                             </div>  
+                                                    {!! Form::hidden('active',0)!!}
                                                     @else
                                               
                                             <div class="checkbox-1">
                                                 <input type="checkbox" id="ch{{$user->id}}" value="1" name="active" />
                                                 <label for="ch{{$user->id}}"></label>
                                             </div>
+                                                    {!! Form::hidden('active',1)!!}
                                                     @endif  
                                             </td>
                                             <td>

@@ -1,6 +1,14 @@
+
+
 @extends('app')
 
 @section('content')
+<?php 
+/*
+use Gregwar\Captcha\CaptchaBuilder;
+$builder = new CaptchaBuilder;
+$builder->build();*/
+?>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
@@ -35,7 +43,20 @@
                                                                 @endif
 									Registrar
 								</button>
+                                                               <!--img src="<?php/* echo $builder->inline();*/ ?>" /--> 
+                                                               <?php
+                                                               /* 
+                                                                $_SESSION['phrase'] = $builder->getPhrase();
+                                                                if($builder->testPhrase($userInput)) {
+                                                                    echo " si ";
+                                                                }
+                                                                else {
+                                                                    echo " no ";
+                                                                }
                                                                 
+                                                                */
+                                                                ?>
+                                                               
 							</div>
 						</div>
 					 {!! Form::close() !!}
