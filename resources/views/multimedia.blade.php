@@ -13,9 +13,9 @@
         </div-->
 
         <ul id="social">
-            <li><a id="enlace1" href="https://twitter.com/HAPKIDO_MURCIA" title=""></a></li>
-            <li><a id="enlace2" href="https://www.facebook.com/aheac?fref=nf" title=""></a></li>
-            <li><a id="enlace3" href="https://www.youtube.com/user/beetfeater/" title=""></a></li>
+            <li><a id="enlace1" target="_blank" href="https://twitter.com/HAPKIDO_MURCIA" title=""></a></li>
+            <li><a id="enlace2" target="_blank" href="https://www.facebook.com/aheac?fref=nf" title=""></a></li>
+            <li><a id="enlace3" target="_blank" href="https://www.youtube.com/channel/UCF8tSL401Rs9Fh_QcGHZt7Q" title=""></a></li>
          </ul>
       
     </div>
@@ -30,8 +30,7 @@
     </div>
    
     <div class="twelve columns" style="padding-bottom: 50px;">
-     
-       <iframe width="800px" height="400px" src="https://www.youtube.com/embed/videoseries?list=PLsFAzrqjgQudU1zjaBzs1sb-D3eF-I9qH" frameborder="4" allowfullscreen></iframe> 
+        <iframe width="800px" height="400px" src="https://www.youtube.com/embed/videoseries?list=PLY5vod9qDun-o5kuM2hQqZIr3yKgRa9Lk" frameborder="4" allowfullscreen></iframe>
         
     </div>	
     <div class="twelve columns">
