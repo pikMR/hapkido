@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\Controller;
 //use Illuminate\Support\Facades\Request as EstatReq; //uso estatico
-use App\Http\Requests\CreateUserRequest; // importamos datos 
-use App\Http\Requests\EditUserRequest; // importamos datos 
+use App\Http\Requests\CreateUserRequest; // importamos datos
+use App\Http\Requests\EditUserRequest; // importamos datos
 use Illuminate\Routing\Redirector;
 use Illuminate\Http\Request; // uso dinamico
 use Illuminate\Support\Facades\Validator;
@@ -19,24 +19,25 @@ class UsersController extends Controller {
      */
         protected  $request;
         protected $user;
+
         public function __construct(Guard $auth,Request $request) {
             $this->auth = $auth;
             //$this->middleware('is_contributor');
             $this->middleware('is_admin');
             $this->middleware('auth');
-            
-            
+
+
             $this->request = $request; // uso dinamico con constructor.
         }
-        
-        
-        
+
+
+
         public function findUser(Route $route)
         {
             $this->user = User::findOrFail($route->getParameter('users'));
         }
-        
-                
+
+
 	/**
          * PANEL DE CONTROL-LISTADO de USUARIOS
          * Puesto que hemos decidido que SOLO el usuario admin tendra acceso al panel de control, diremos que
@@ -48,7 +49,7 @@ class UsersController extends Controller {
                 $users = User::filterAndPaginate($request->get('id'),$request->get('type')); // la variable users se usa en index.blade.php
                 return view('admin.users.index',compact('users'),array('nombre' => $this->auth->user()->getFullNameAttribute()));
 	}
-        
+
 
 	/**
 	 * PANEL DE CREACIÓN DE USUARIOS con determinado ID.
@@ -60,21 +61,21 @@ class UsersController extends Controller {
 	{
 		return view('admin.users.create');
 	}
-        
- 
+
+
 	/**
 	 * FUNCIÓN PARA LA CREACIÓN DE USUARIOS.
-         * Esta función es utilizada por create(vista:admin.users.create) y por 
+         * Esta función es utilizada por create(vista:admin.users.create) y por
          * auth/register (vista:admin.auth.register) También para editarlo.
          * TENDRAN ACCESO TANTO ADMIN, COMO GUEST.
 	 * @return BACK
 	 */
         public function store(CreateUserRequest $request){
-          
+
             $user = User::create($request->all());
             UserProfile::create(['user_id'=>$user->id]);
             //Session::put('store_message', "- Activación de la cuenta en proceso -");
-            return redirect()->back();  
+            return redirect()->back();
         }
 
 
@@ -88,10 +89,10 @@ class UsersController extends Controller {
 	{
 		return redirect()->back();
 	}
-        
+
         /**
-         * 
-         * SOLO ACCESO DE 
+         *
+         * SOLO ACCESO DE
          */
         public function avanzado()
 	{
@@ -106,11 +107,11 @@ class UsersController extends Controller {
 	 * @return Response
 	 */
 	public function edit($id)
-	{   
+	{
             $user = User::findOrFail($id);
             return view('admin.users.edit',compact('user')); // esta variable es usada en edit.blade.php
 	}
-        
+
 /*        public function editprofile($id)
 	{
             $user = User::findOrFail($id);	//
@@ -119,23 +120,23 @@ class UsersController extends Controller {
 
 	/**
 	 * USADO POR ADMIN en :
-	 * vistas : admin\users\edit.blade.php 
+	 * vistas : admin\users\edit.blade.php
          *          admin\users\partials\table.blade.php
 	 * @param  int  $id
 	 * @return Response
 	 */
 	public function update(EditUserRequest $request, $id)
-	{          
+	{
 		$user = User::findOrFail($id);	//
                 $user->fill($request->all());
                 $user->save();
                 return redirect()->back();
 	}
-   
+
 
 	/**
 	 * Remove the specified resource from storage.
-	 *  USADO EN 
+	 *  USADO EN
          * vistas por admin :
          * admin\users\index.blade.php
          * admin\users\partials\delete.blade.php
@@ -147,16 +148,16 @@ class UsersController extends Controller {
                // dd('3');
                 $user = User::findOrFail($id);
                 $user->delete();
-                
+
                 $message = $user->full_name . ' fue eliminado de nuestros registros.';
-                
+
                 if($request->ajax()){
                     return response()->json([
                         'id' => $this->user->id,
                         'message' => $message
                     ]);
                 }
-                
+
                 Session::flash('message',$message);
                 return redirect()->route('admin.users.index');
 	}
@@ -166,30 +167,30 @@ class UsersController extends Controller {
 	{
             $data = EstatReq::all();
             $rules = array(
-                'first_name' => 'required', 
-                'last_name' => 'required', 
-                'email' => 'required', 
-                'password'=> 'required', 
+                'first_name' => 'required',
+                'last_name' => 'required',
+                'email' => 'required',
+                'password'=> 'required',
                 'type' => 'required'
             );
-            
+
             $v = Validator::make($data,$rules);
-            
+
             if($v->fails()){
               return redirect()->back()
                       ->withErrors($v->errors())
                       ->withInput(EstatReq::except('password'));
             }
-            
+
            // Validator::make($data,$rules);
             //dd(Request::all()); // llamada a facades, llamadas estaticas con use Illuminate\Support\Facades\Request;
             //dd($this->request->all());
             // crear con fill: $user->fill($request->all());  // todo lo del llaves
             // crear con create: User::create($request->all());
-            // creación con facabe y no con dependencias : 
+            // creación con facabe y no con dependencias :
             // $user = User::create(Request::all());
-            
-            
+
+
             $user = new User($request->all()); // crear con dependencias.
             //$user->type = 'user'; de esta forma forzamos a que todo usuario sea de tipo usuario
             $user->save(); // guardamos en db

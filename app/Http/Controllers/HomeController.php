@@ -54,7 +54,7 @@ class HomeController extends Controller {
                     dd($users->toArray()); // lo traigo en array*/
         }
         
-	public function Index(Request $request)
+	public function index(Request $request)
 	{
                $users = User::filterAndPaginate($request->get('id'),$request->get('type')); // uso de clase User
                return view('admin.home.index',compact('users'),array('usuario' => $this->auth->user()));
