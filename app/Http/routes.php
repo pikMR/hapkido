@@ -100,7 +100,8 @@ Route::group(['namespace' => 'Admin'],function(){
 
 
 
-Route::get('socios', 'HomeController@index');
+/*Route::get('socios', 'HomeController@index');*/
+Route::get('socios', 'WelcomeController@index');
 
 
 
