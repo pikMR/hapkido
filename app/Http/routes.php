@@ -29,6 +29,8 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('auth','AuthWelcomeController@index');
 
+Route::get('socios', 'TestController@index');
+
 Route::get('test', 'TestController@index');
 
 Route::get('home', 'HomeController@index');
@@ -100,10 +102,5 @@ Route::group(['namespace' => 'Admin'],function(){
 
 
 
-/*Route::get('socios', 'HomeController@index');*/
-Route::get('socios', 'WelcomeController@index');
 
 
-
-//Route::get('admin/home/myprofile','HomeController@myprofile');
-//Route::resource('uprofile');
