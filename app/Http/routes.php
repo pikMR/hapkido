@@ -9,7 +9,7 @@
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the controller to call when that URI is requested.
 |   NombredelControlador@nombreDeLaAccion
- * 
+ *
  * Route::pattern('id','\d+'); // indico que id sera un numero ..ruta/{id}
  * ejemplo : Route::get('ruta/{id}', function($id){
  * return 'accediendo a '. $id;
@@ -29,7 +29,7 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('auth','AuthWelcomeController@index');
 
-Route::get('socios', 'TestController@index');
+Route::get('socios', 'HomeController@index');
 
 Route::get('test', 'TestController@index');
 
@@ -62,7 +62,7 @@ Route::controllers([
 
 /*Route::group(['middleware'=>'auth','namespace' => 'Admin'],function(){
    Route::get();
-    
+
 });*/
 
 
@@ -78,12 +78,12 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'], function(){
   Route::post('contact',
         ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 
-  
-  
+
+
  Route::post('register',
          ['as' => 'register.add','uses' => 'AboutController@registrar']
          );
- 
+
 Route::put('myprofile/{id}',
          ['as' => 'perfil.update','uses' => 'AboutController@actualizar']
          );
@@ -92,15 +92,10 @@ Route::post('myprofile/{id}',
          );
 
 Route::group(['namespace' => 'Admin'],function(){
-    
+
     Route::get('appeals','ProfileController@appeals');
     Route::put('appeals/remove',
-        ['as' => 'appeals.remove', 'uses' => 'ProfileController@appremove']);  
+        ['as' => 'appeals.remove', 'uses' => 'ProfileController@appremove']);
     Route::get('help','ProfileController@help');
     Route::resource('profile','ProfileController');
 });
-
-
-
-
-

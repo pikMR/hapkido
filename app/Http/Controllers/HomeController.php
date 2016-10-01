@@ -14,7 +14,7 @@ class HomeController extends Controller {
 	| controller as you wish. It is just here to get your app started!
 	|
 	*/
-    
+
       //  public function getOrm
 
 	/**
@@ -24,8 +24,7 @@ class HomeController extends Controller {
 	 */
 	public function __construct(Guard $auth)
 	{
-				dd(1);
-                $this->auth = $auth;
+    $this->auth = $auth;
 		$this->middleware('auth');
                 //$this->request = $request;
 	}
@@ -36,16 +35,16 @@ class HomeController extends Controller {
 	 * @return Response
 	 */
         public function getOrm() // a traves del route puedo acceder a este metodo Route::get('socios/orm', 'HomeController@getOrm');
-        { 
-            
+        {
+
            // $user = User::first();
            // dd($user->fullname); // podemos acceder gracias a getFullNameAttribute() de la clase users.php
            // dd($user->profile); // todo el objeto user profile
           //  dd($user->profile->age); // obtengo la edad del objeto gracias a getAgeAttribute() de la clase usersProfile
-            
+
            /* $users = User::get();
             dd($users->toArray());*/
-            
+
            /* $users = User::select('id','first_name') // toda tabla usuario ordenada, junto a la tabla relacional profile.
                     // -> aqui podría poner un join para solo coger usuarios con twitter etc..
                     ->with('profile') // objeto profile
@@ -54,7 +53,7 @@ class HomeController extends Controller {
                     ->get();
                     dd($users->toArray()); // lo traigo en array*/
         }
-        
+
 	public function index(Request $request)
 	{
                $users = User::filterAndPaginate($request->get('id'),$request->get('type')); // uso de clase User
@@ -77,7 +76,7 @@ class HomeController extends Controller {
                 ->leftJoin('user_profiles','users.id','=','user_profiles.user_id') // traemos info de user_profiles
                         // aunque user_profiles no exista con lefJoin permite traerlo todo.
                 ->get();
-                
+
                 foreach($result as $row)
                 {
                     $row->full_name= $row-> first_name . ' ' . $row->last_name;
