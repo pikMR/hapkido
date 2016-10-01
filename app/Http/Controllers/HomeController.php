@@ -24,6 +24,7 @@ class HomeController extends Controller {
 	 */
 	public function __construct(Guard $auth)
 	{
+				dd(1);
                 $this->auth = $auth;
 		$this->middleware('auth');
                 //$this->request = $request;
