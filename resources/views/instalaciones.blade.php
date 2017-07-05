@@ -1,9 +1,14 @@
 <div id="instalacion">
-    <div class="container" style="margin-top:0px;">
-        <h4 style="margin-left: 100px;">
-            <a href="http://masalladelmasalla.blogspot.com.es/2008/06/i-shin-den-shin.html">I shin den shin</a>: De Mi Espíritu a tú Espíritu
-        </h4>                        
-        <div class="four columns title">
+    <div class="container">
+        <div class="row-xs-12 input-position  text-center">
+          <div class="col">
+              <h4 id="instalacion_titulo">
+                <a href="http://masalladelmasalla.blogspot.com.es/2008/06/i-shin-den-shin.html">I shin den shin</a>: De Mi Espíritu a tú Espíritu
+              </h4>
+          </div>
+        </div> 
+        <div>                       
+        <div id="bandera" class="four columns title">
             <img src="images/general/tshinbandera3.png">
         </div>	
         <div class="six columns">

@@ -1,4 +1,4 @@
-<div id="social" class="section fadeIn" style="background: none repeat scroll 0% 0% #E9E9E9;
+<div class="section fadeIn" style="background: none repeat scroll 0% 0% #E9E9E9;
     background-color: #E9E9E9;
     background-image: none;
     background-repeat: repeat;
@@ -7,7 +7,7 @@
     background-clip: border-box;
     background-origin: padding-box;
     background-size: auto auto;">
-    <div class="container" style="margin-top: -200px;">
+    <div class="container">
         <!--div class="four four four columns">
                 <img src="images/general/tejado3.png">
         </div-->
@@ -29,8 +29,8 @@
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
    
-    <div class="twelve columns" style="padding-bottom: 50px;">
-        <iframe width="800px" height="400px" src="https://www.youtube.com/embed/videoseries?list=PLY5vod9qDun-o5kuM2hQqZIr3yKgRa9Lk" frameborder="4" allowfullscreen></iframe>
+    <div class="twelve columns">
+        <iframe id="video" width="800px" height="400px" src="https://www.youtube.com/embed/videoseries?list=PLY5vod9qDun-o5kuM2hQqZIr3yKgRa9Lk" frameborder="4" allowfullscreen></iframe>
         
     </div>	
     <div class="twelve columns">

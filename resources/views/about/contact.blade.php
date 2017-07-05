@@ -18,7 +18,7 @@
             </p>       
         </div>
         <p itemprop="name" class="subhead">A.H.E.A.C</p>
-        <div class="nine columns">
+        <div class="nine columns" id="formulario">
             <div class="hide_terms">
                 <div class="gone">
                     {!! Form::open(array('route' => 'contact_store', 'class' => 'form')) !!}

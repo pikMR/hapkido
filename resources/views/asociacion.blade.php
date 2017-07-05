@@ -1,7 +1,7 @@
 <div id="about" class="section fadeIn">
      
     <!-- FOTOS DE LA EXHIBICIÓN -->
-    <div class="container" style="margin-top: 177px;">
+    <div class="container" id="asociacion_fotos">
          <div class="six columns">
              <img src="images/general/maestro2.JPG">
          </div>
@@ -21,10 +21,12 @@
           <span style="font-size:20px;">{{ $asocizq }} {{ $asocder }}</span>
                     <p> Unión (HAP),energía (KI) y camino (DO).</p>
         </div>  
-         <div class="eight columns title" style="padding: 1.3478261%; background: #eee; max-width: 25.3043478%; margin: 0 0 0 300px;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses!2ses!4v1425841221152!6m8!1m7!1sqyCwHbvhnwQAAAQY_zHD0w!2m2!1d37.996093!2d-1.144608!3f191.83582758492523!4f-24.190460978951876!5f0.7820865974627469">
-        </iframe>
-         </div>
+         <div class="row">
+             <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses!2ses!4v1425841221152!6m8!1m7!1sqyCwHbvhnwQAAAQY_zHD0w!2m2!1d37.996093!2d-1.144608!3f191.83582758492523!4f-24.190460978951876!5f0.7820865974627469">
+            </iframe>
+             </div>
+        </div>
     </div>
     <!-- DOJANG -->
        
